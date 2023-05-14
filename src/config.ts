@@ -10,14 +10,14 @@ export enum Operation {
 export type Config = {
   args: string[];
   operation: Operation;
-  pathToConfig: string;
+  configPath: string;
   pwd: string;
 };
 
 export const getConfig = (options: Options): Config => {
   return {
     pwd: getPwd(options),
-    pathToConfig: getCfg(options),
+    configPath: getCfg(options),
     args: getArgs(options),
     operation: getOperation(options),
   };
