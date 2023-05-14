@@ -17,5 +17,9 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "bin": "dist/src/index.js",
+  "pkg": {
+    "scripts": "dist/src/index.js"
   }
 }
