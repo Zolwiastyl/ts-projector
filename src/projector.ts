@@ -5,9 +5,7 @@ import { Config } from "./config";
 
 export type Data = {
   projector: {
-    // pwd
     [key: string]: {
-      // key      -> value
       [key: string]: string;
     };
   };
