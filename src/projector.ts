@@ -23,7 +23,9 @@ export class Projector {
     if (fs.existsSync(config.configPath)) {
       try {
         data = JSON.parse(fs.readFileSync(config.configPath).toString());
-      } catch (error) {}
+      } catch (error) {
+        console.error("Error reading config file", error);
+      }
     }
     return new Projector(config, data);
   }
@@ -80,5 +82,8 @@ export class Projector {
     if (dir) {
       delete dir[key];
     }
+  }
+  save() {
+    fs.writeFileSync(this.config.configPath, JSON.stringify(this.data));
   }
 }

@@ -16,14 +16,13 @@ export function getOptions(): Options {
     },
     {
       name: "pwd",
-      defaultValue: "./",
+      alias: "p",
       type: String,
     },
     {
       name: "config",
       alias: "c",
       type: String,
-      defaultValue: "./",
     },
   ]) as Options;
 }

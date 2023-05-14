@@ -31,17 +31,15 @@ function getPwd(options: Options): string {
 }
 
 function getCfg(options: Options): string {
-  if (options.config) {
-    return options.config;
-  }
+  if (options.config) return options.config;
+
   const home = process.env["HOME"];
   const location = process.env["XDG_CONFIG_HOME"] || home;
-  if (!location) {
-    throw new Error("Couldn't determine config location");
-  }
+
   if (location === home) {
     return path.join(location, ".projector.json");
   }
+
   return path.join(location, "projector", ".projector");
 }
 
