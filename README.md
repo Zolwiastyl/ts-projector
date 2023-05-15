@@ -3,8 +3,7 @@
 CLI for setting variables per directory - so you can set `env` for current directory to `dev` and to directory next to it to `prod`.
 And when you go between them you will just call `$(ts-projector env)` instead of thinking or forgetting if this should be `dev` or `prod`.
 
-
-*Made along with ThePrimeagen while watching polyglot programmer on Fronend Masters.*
+\_Made along with ThePrimeagen while watching polyglot programmer on Frontend Masters.\_
 
 ## Building
 
@@ -22,16 +21,17 @@ pnpm test
 
 To get a binary you need to have `pkg` installed and run it in root directory:
 
-```
+```sh
 pkg .
 ```
 
 Then, as an ouput you will get:
- - `ts-linux`
- - `ts-win.exe`
- - `ts-macos`
 
-You may copy them to your desired bin directory with any name you wish - for rest of `README` I will refer to it as `ts-projector`
+- `ts-linux`
+- `ts-win.exe`
+- `ts-macos`
+
+You may copy them to your desired bin directory with any name you wish — for rest of `README` I will refer to it as `ts-projector`
 
 ## Use
 
